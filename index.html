@@ -26,6 +26,7 @@
 		
 		#sobre {position: relative; text-align: center; color: #f2f2f2;}
 		#sobre p {font-size:2vw; color:#f2f2f2;}
+		.imgpequena {display:none;}
 		
 		.informacao {position: absolute; top: 0%; right: 4%; width: 45%; text-align: left;}
 		.informacao a {font-size: 1.8vw; border-radius: 8px; border: 2px solid #f2f2f2; font-family: "Open Sans", sans-serif; padding: 14px; text-decoration: none; color: #f2f2f2; font-weight: bold; transition: 1s;}
@@ -49,6 +50,8 @@
 			h3 {font-size: 3.44vw;}
 						
 			#sobre p {font-size: 3vw; color:#f2f2f2;}
+			.imggrande {display: none;}
+			.imgpequena {display: block;}
 					
 			.informacao {position: absolute; top: 0%; right: 0px; left: 0px; margin: 0 auto; width: 70%; text-align: left;}
 			.informacao a {font-size: 3vw;}
@@ -63,7 +66,9 @@
 
 	<body>		
 		<div id="sobre">
-			<img srcset="Naes_banner-3.jpg 600w, Naes_banner-2.jpg 4288w"  sizes="(max-width: 600px) 600px, 4288px" src="Naes_banner-2.jpg" alt="Foto de toda a equipe do projeto" style="width:100%; border-radius:2px;">
+			<img class="imgpequena" src="Naes_banner-3.jpg" alt="Foto de toda a equipe do projeto" style="width:100%; border-radius:16px;">
+			<img class="imggrande" src="Naes_banner-2.jpg" alt="Foto de toda a equipe do projeto" style="width:100%; border-radius:16px;">
+			
 			<div class="informacao"><h1>Somos o projeto Nanoessência</h1>
 				<p>Desenvolvemos estudos e pesquisas para promoção de ciência, tecnologia e inovação em nanotecnologia e cosméticos, estimulando meninas e mulheres em carreiras científicas.
 				</p>
